@@ -14,6 +14,9 @@ import time
 
 
 # 画樱花的躯干(60,t)
+import yaml
+
+
 def tree(branch, t: turtle.Turtle):
     time.sleep(0.0005)
     if branch > 3:
@@ -62,7 +65,7 @@ def petal(m, t: turtle.Turtle):
         t.backward(b)
 
 
-if __name__ == '__main__':
+def run():
     t = turtle.Turtle()
     w = turtle.Screen()
     t.hideturtle()
@@ -76,3 +79,6 @@ if __name__ == '__main__':
     tree(60, t)
     petal(100, t)
     w.exitonclick()
+
+if __name__ == '__main__':
+    run()
